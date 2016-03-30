@@ -79,8 +79,8 @@
 		A2E2561A1CA5166D0083E26B /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		A2E2561C1CA5166D0083E26B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		A2E2561D1CA5166D0083E26B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		A2E256211CA5166D0083E26B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A2E256221CA5166D0083E26B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2E256211CA5166D0083E26B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Classes/Main(主要)/Other/AppDelegate.h"; sourceTree = "<group>"; };
+		A2E256221CA5166D0083E26B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Classes/Main(主要)/Other/AppDelegate.m"; sourceTree = "<group>"; };
 		A2E256231CA5166D0083E26B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2E256271CA5166D0083E26B /* QRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanViewController.h; sourceTree = "<group>"; };
 		A2E256281CA5166D0083E26B /* QRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanViewController.m; sourceTree = "<group>"; };
@@ -166,6 +166,8 @@
 		A2E2559B1CA50DB20083E26B /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				A2E256211CA5166D0083E26B /* AppDelegate.h */,
+				A2E256221CA5166D0083E26B /* AppDelegate.m */,
 				A2E2560C1CA5166D0083E26B /* Classes */,
 				A2E2559C1CA50DB20083E26B /* Supporting Files */,
 			);
@@ -272,8 +274,6 @@
 		A2E256201CA5166D0083E26B /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				A2E256211CA5166D0083E26B /* AppDelegate.h */,
-				A2E256221CA5166D0083E26B /* AppDelegate.m */,
 				A2E256231CA5166D0083E26B /* main.m */,
 			);
 			path = Other;
