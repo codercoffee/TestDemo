@@ -15,14 +15,14 @@
 		A2323C321CB8DF6500437311 /* UIScreen+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A2323C311CB8DF6500437311 /* UIScreen+Extension.m */; };
 		A2323C351CB8E19300437311 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A2323C341CB8E19300437311 /* UIView+Extension.m */; };
 		A2323C381CB8E23900437311 /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2323C371CB8E23900437311 /* KeyCenter.m */; };
+		A2323C3E1CB8E3FA00437311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2323C3D1CB8E3FA00437311 /* AppDelegate.m */; };
+		A2323C401CB8E41100437311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2323C3F1CB8E41100437311 /* main.m */; };
 		A2E255A71CA50DB20083E26B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E255A51CA50DB20083E26B /* Main.storyboard */; };
 		A2E255A91CA50DB20083E26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E255A81CA50DB20083E26B /* Assets.xcassets */; };
 		A2E255AC1CA50DB20083E26B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E255AA1CA50DB20083E26B /* LaunchScreen.storyboard */; };
 		A2E255B71CA50DB20083E26B /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E255B61CA50DB20083E26B /* TestTests.m */; };
 		A2E255C21CA50DB20083E26B /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E255C11CA50DB20083E26B /* TestUITests.m */; };
 		A2E256481CA5166D0083E26B /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E2561D1CA5166D0083E26B /* NavigationController.m */; };
-		A2E256491CA5166D0083E26B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E256221CA5166D0083E26B /* AppDelegate.m */; };
-		A2E2564A1CA5166D0083E26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E256231CA5166D0083E26B /* main.m */; };
 		A2E2564B1CA5166D0083E26B /* QRScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E256281CA5166D0083E26B /* QRScanViewController.m */; };
 		A2E2564C1CA5166D0083E26B /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E2562B1CA5166D0083E26B /* QRView.m */; };
 		A2E2564D1CA5166D0083E26B /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E2562E1CA5166D0083E26B /* RefreshViewController.m */; };
@@ -70,6 +70,9 @@
 		A2323C341CB8E19300437311 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		A2323C361CB8E23900437311 /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
 		A2323C371CB8E23900437311 /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
+		A2323C3C1CB8E3FA00437311 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2323C3D1CB8E3FA00437311 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2323C3F1CB8E41100437311 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2E255991CA50DB20083E26B /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E255A61CA50DB20083E26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2E255A81CA50DB20083E26B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,9 +86,6 @@
 		A2E255C31CA50DB20083E26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2E2561C1CA5166D0083E26B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		A2E2561D1CA5166D0083E26B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
-		A2E256211CA5166D0083E26B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Classes/Main(主要)/Other/AppDelegate.h"; sourceTree = "<group>"; };
-		A2E256221CA5166D0083E26B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Classes/Main(主要)/Other/AppDelegate.m"; sourceTree = "<group>"; };
-		A2E256231CA5166D0083E26B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Classes/Main(主要)/Other/main.m"; sourceTree = "<group>"; };
 		A2E256271CA5166D0083E26B /* QRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanViewController.h; sourceTree = "<group>"; };
 		A2E256281CA5166D0083E26B /* QRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRScanViewController.m; sourceTree = "<group>"; };
 		A2E2562A1CA5166D0083E26B /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 		A2E2559B1CA50DB20083E26B /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				A2E256211CA5166D0083E26B /* AppDelegate.h */,
-				A2E256221CA5166D0083E26B /* AppDelegate.m */,
+				A2323C3C1CB8E3FA00437311 /* AppDelegate.h */,
+				A2323C3D1CB8E3FA00437311 /* AppDelegate.m */,
 				A2E2560C1CA5166D0083E26B /* Classes */,
 				A2E2559C1CA50DB20083E26B /* Supporting Files */,
 			);
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				A2E256551CA516E60083E26B /* Test-Prefix.pch */,
-				A2E256231CA5166D0083E26B /* main.m */,
+				A2323C3F1CB8E41100437311 /* main.m */,
 				A2E255AD1CA50DB20083E26B /* Info.plist */,
 				A2E255A81CA50DB20083E26B /* Assets.xcassets */,
 				A2E255A51CA50DB20083E26B /* Main.storyboard */,
@@ -574,18 +574,18 @@
 				A2E2564B1CA5166D0083E26B /* QRScanViewController.m in Sources */,
 				A2E256531CA5166D0083E26B /* RSAViewController.m in Sources */,
 				A2E256511CA5166D0083E26B /* CreateKey.m in Sources */,
+				A2323C3E1CB8E3FA00437311 /* AppDelegate.m in Sources */,
 				A2323C321CB8DF6500437311 /* UIScreen+Extension.m in Sources */,
 				A2E256541CA5166D0083E26B /* TextViewController.m in Sources */,
 				A2E2564C1CA5166D0083E26B /* QRView.m in Sources */,
 				A2323C261CB8DEB300437311 /* KColor.m in Sources */,
 				A2323C381CB8E23900437311 /* KeyCenter.m in Sources */,
+				A2323C401CB8E41100437311 /* main.m in Sources */,
 				A2E2564F1CA5166D0083E26B /* NSString+Base64.m in Sources */,
 				A2323C351CB8E19300437311 /* UIView+Extension.m in Sources */,
-				A2E256491CA5166D0083E26B /* AppDelegate.m in Sources */,
 				A2323C2D1CB8DF3000437311 /* KAFN.m in Sources */,
 				A2E2564D1CA5166D0083E26B /* RefreshViewController.m in Sources */,
 				A2323C2E1CB8DF3000437311 /* KString.m in Sources */,
-				A2E2564A1CA5166D0083E26B /* main.m in Sources */,
 				A2E256521CA5166D0083E26B /* LoginConfirmViewController.m in Sources */,
 				A2E256501CA5166D0083E26B /* OpenSSLRSAWrapper.m in Sources */,
 				A2E2564E1CA5166D0083E26B /* NSData+Base64.m in Sources */,
