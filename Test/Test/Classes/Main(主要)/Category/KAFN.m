@@ -10,27 +10,27 @@
 
 @implementation KAFN
 
-+ (NSString *)kCaptureUrl:(NSString *)url {
-
-    if ([url rangeOfString:@"?"].location != NSNotFound) {
-        
++ (NSString *)kCaptureUrl:(NSString *)url
+{
+    if ([url rangeOfString:@"?"].location != NSNotFound)
+    {
         NSRange range = [url rangeOfString:@"?"];
         url = [url substringToIndex:range.location];
     }
     return url;
 }
 
-+ (NSMutableDictionary *)kDealParamsOfUrl:(NSString *)url params:(NSMutableDictionary *)params {
-    
-    if ([url rangeOfString:@"?"].location != NSNotFound) {
-        
++ (NSMutableDictionary *)kDealParamsOfUrl:(NSString *)url params:(NSMutableDictionary *)params
+{
+    if ([url rangeOfString:@"?"].location != NSNotFound)
+    {
         NSRange range = [url rangeOfString:@"?"];
         NSString *parameterString = [url substringFromIndex:range.location + 1];
-        if ([parameterString rangeOfString:@"&"].location != NSNotFound) {
-            
+        if ([parameterString rangeOfString:@"&"].location != NSNotFound)
+        {
             NSArray *paramsArr = [parameterString componentsSeparatedByString:@"&"];
-            for (int i = 0; i < paramsArr.count; i ++) {
-                
+            for (int i = 0; i < paramsArr.count; i ++)
+            {
                 NSString *temporaryString = paramsArr[i];
                 NSArray *temporaryArr = [temporaryString componentsSeparatedByString:@"="];
                 NSString *keyStr = temporaryArr[0];
@@ -39,8 +39,9 @@
 //                NSLog(@"参数：%@=%@", keyStr, valueStr);
             }
             
-        } else {
-            
+        }
+        else
+        {
             NSArray *temporaryArr = [parameterString componentsSeparatedByString:@"="];
             NSString *keyStr = temporaryArr[0];
             NSString *valueStr = temporaryArr[1];

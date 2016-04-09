@@ -7,20 +7,21 @@
 //
 
 #import "KString.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation KString
 
 
-+ (CGSize)kSizeOfText:(NSString *)text withFont:(UIFont *)font andMaxW:(CGFloat)maxW {
-    
++ (CGSize)kSizeOfText:(NSString *)text withFont:(UIFont *)font andMaxW:(CGFloat)maxW
+{
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = font;
     CGSize maxSize = CGSizeMake(maxW, MAXFLOAT);
     return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
 
-+ (CGSize)kSizeOfText:(NSString *)text withFont:(UIFont *)font {
-
++ (CGSize)kSizeOfText:(NSString *)text withFont:(UIFont *)font
+{
     return [KString kSizeOfText:text withFont:font andMaxW:MAXFLOAT];
 }
 
@@ -49,19 +50,34 @@
 }
 
 
-+ (NSString *)kInterceptOriginalString:(NSString *)originalString withSpecifiedString:(NSString *)specifiedString {
-    
++ (NSString *)kInterceptOriginalString:(NSString *)originalString withSpecifiedString:(NSString *)specifiedString
+{
     NSRange range = [originalString rangeOfString:specifiedString];
-    if (range.location != NSNotFound) {
-        
+    if (range.location != NSNotFound)
+    {
         //        NSLog(@"Location:%i,Leigth:%i",range.location,range.length);
         return [originalString substringFromIndex:range.location + 1];
-    } else {
-        
+    }
+    else
+    {
         NSLog(@"该字符串中不包含: %@",specifiedString);
         return originalString;
     }
+}
+
+
++ (NSString *)kMD5:(NSString *)str
+{
+    const char* cStr = [str UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(cStr, (unsigned int)strlen(cStr), digest);
     
+    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i ++)
+    {
+        [result appendFormat:@"%02x", digest[i]];// 小写 x 表示输出的是小写 MD5 ，大写 X 表示输出的是大写 MD5
+    }
+    return result;
 }
 
 

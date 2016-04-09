@@ -10,7 +10,11 @@
 
 @interface UIScreen (Extension)
 
-/** 修正iOS8之前的版本，屏幕旋转时坐标系不变,返回修正之后的屏幕bounds */
+/**
+ *  修正iOS8之前的版本，屏幕旋转时坐标系不变,返回修正之后的屏幕bounds
+ *
+ *  @return 修正之后的屏幕大小bounds（CGRect）
+ */
 + (CGRect)screenBounds;
 
 @end

@@ -356,7 +356,7 @@
     // 菊花
     UIActivityIndicatorView *activityV = [[UIActivityIndicatorView alloc] init];
     activityV.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-    activityV.frame = CGRectMake((SCREEN_WIDTH - activityV.width) / 2, SCREEN_HEIGHT / 2 - 20 - 64, activityV.width, activityV.height);
+//    activityV.frame = CGRectMake((SCREEN_WIDTH - activityV.width) / 2, SCREEN_HEIGHT / 2 - 20 - 64, activityV.width, activityV.height);
     [_maskView addSubview:activityV];
     [activityV startAnimating];
     // 提示

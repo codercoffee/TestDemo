@@ -7,18 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking.h>
 
 @interface KAFN : NSObject
 
-
-
-
-
-/** 截取不带参数的url */
+/**
+ *  截取带参数的url
+ *
+ *  @param url 原url
+ *
+ *  @return 截取出的不带参数的url
+ */
 + (NSString *)kCaptureUrl:(NSString *)url;
 
-/** 提取url本身自带参数 */
+/**
+ *  提取url本身自带参数
+ *
+ *  @param url 注意：这里传进来的是没处理之前的url
+ *  @param params 参数字典
+ *
+ *  @return 添加参数后的字典
+ */
 + (NSMutableDictionary *)kDealParamsOfUrl:(NSString *)url params:(NSMutableDictionary *)params;
 
 @end
